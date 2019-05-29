@@ -37,7 +37,7 @@ objects:
     strategy:
       activeDeadlineSeconds: 21600
       recreateParams:
-        timeoutSeconds: 600
+        timeoutSeconds: 1200
         post:
           execNewPod:
             command:
