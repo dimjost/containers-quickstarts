@@ -3,7 +3,7 @@
 This image builds sites using [Jekyll](https://jekyllrb.com/).
 
 ## Requirements
-This example is using the [OpenShift Applier](https://github.com/redhat-cop/openshift-applier) to build and deploy Jekyll. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html).
+This example is using the [OpenShift Applier](https://github.com/dimjost/openshift-applier) to build and deploy Jekyll. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html).
 
 ## OpenShift objects
 The openshift-applier will create the following OpenShift objects:
@@ -17,7 +17,7 @@ The openshift-applier will create the following OpenShift objects:
 ## Quickstart
 
 1. Clone this repository:
-   `git clone https://github.com/redhat-cop/containers-quickstarts`
+   `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/build-s2i-jekyll`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=roles`
 4. Login to Openshift: `oc login -u <username> https://master.example.com:8443`

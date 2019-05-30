@@ -25,7 +25,7 @@ OpenShift provides several out of the box Source to Image builder images. To sup
 
 It makes use of the following technologies:
 
-* [Openshift Applier](https://github.com/redhat-cop/openshift-applier)
+* [Openshift Applier](https://github.com/dimjost/openshift-applier)
 
 ## Bill of Materials
 
@@ -58,12 +58,12 @@ There is no specific requirements necessary for this demonstration. The presente
 The following prerequisites must be met prior to beginning to build and deploy Liberty
 
 * OpenShift Command Line Tool
-* [Openshift Applier](https://github.com/redhat-cop/openshift-applier) to build and deploy artifacts and applications. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html)
+* [Openshift Applier](https://github.com/dimjost/openshift-applier) to build and deploy artifacts and applications. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html)
 The following steps are to be used to demonstrate two methods for producing the Source to Image builder image and deploying an application using the resulting image.
 
 ## Build and Deployment
 
-1. Clone this repository: `git clone https://github.com/redhat-cop/containers-quickstarts`
+1. Clone this repository: `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/build-s2i-liberty`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=roles`
 4. Login to OpenShift: `oc login -u <username> https://master.example.com:8443`

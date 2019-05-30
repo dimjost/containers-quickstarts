@@ -28,7 +28,7 @@
 					"description": "Git source URI for the builder",
 					"displayName": "Builder source url",
 					"name": "BUILDER_SOURCE_REPOSITORY_URL",
-					"value": "https://github.com/redhat-cop/containers-quickstarts.git",
+					"value": "https://github.com/dimjost/containers-quickstarts.git",
 					"required": true
 				},
 				{
@@ -362,7 +362,7 @@
 					"description": "Git source URI for HTTPD builder",
 					"displayName": "HTTPD builder source url",
 					"name": "HTTPD_BUILDER_SOURCE_REPOSITORY_URL",
-					"value": "https://github.com/redhat-cop/containers-quickstarts.git",
+					"value": "https://github.com/dimjost/containers-quickstarts.git",
 					"required": true
 				},
 				{

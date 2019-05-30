@@ -6,7 +6,7 @@ A simple container to run [hoverfly](https://hoverfly.readthedocs.io/en/latest/p
 
 ### Running in OpenShift
 
-[OpenShift Applier](https://github.com/redhat-cop/openshift-applier)
+[OpenShift Applier](https://github.com/dimjost/openshift-applier)
 
 Run the following to pull in applier:
 

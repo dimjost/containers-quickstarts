@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# inspired by https://github.com/openshift/jenkins/blob/master/2/contrib/jenkins/jenkins-common.sh
+# inspired by https://github.com/dimjost/jenkins/blob/master/2/contrib/jenkins/jenkins-common.sh
 USER_ID=$(id -u)
 GROUP_ID=$(id -g)
 

@@ -60,7 +60,7 @@ parameters:
 - description: Git source URL for application
   name: SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/redhat-cop/containers-quickstarts
+  value: https://github.com/dimjost/containers-quickstarts
 - description: Version of Zookeeper
   name: ZOOKEEPER_VERSION
   required: true

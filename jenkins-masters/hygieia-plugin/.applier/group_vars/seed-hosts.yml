@@ -1,7 +1,7 @@
 namespace: jenkins-hygieia
 hygieia_url:
 hygieia_token:
-source_code_url: https://github.com/redhat-cop/containers-quickstarts.git
+source_code_url: https://github.com/dimjost/containers-quickstarts.git
 source_code_ref: master
 jenkins_memory_limit: 1024Mi
 

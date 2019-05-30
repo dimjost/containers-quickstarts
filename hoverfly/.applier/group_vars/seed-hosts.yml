@@ -3,7 +3,7 @@ app_name: hoverfly
 
 build:
   NAME: "{{ app_name }}"
-  SOURCE_REPOSITORY_URL: https://github.com/redhat-cop/containers-quickstarts.git
+  SOURCE_REPOSITORY_URL: https://github.com/dimjost/containers-quickstarts.git
   SOURCE_REPOSITORY_REF: master
   SOURCE_CONTEXT_DIR: hoverfly
 deploy:

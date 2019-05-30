@@ -43,7 +43,7 @@ This image is available publicly at `quay.io/redhat-cop/tool-box`, so there's no
 
 Clone this repo:
 
-`$ git clone https://github.com/redhat-cop/containers-quickstarts`
+`$ git clone https://github.com/dimjost/containers-quickstarts`
 
 Build the container:
 
@@ -51,4 +51,4 @@ Build the container:
 
 ### In OpenShift
 
-`oc new-build https://github.com/redhat-cop/containers-quickstarts --name=tool-box --context-dir=tool-box`
+`oc new-build https://github.com/dimjost/containers-quickstarts --name=tool-box --context-dir=tool-box`

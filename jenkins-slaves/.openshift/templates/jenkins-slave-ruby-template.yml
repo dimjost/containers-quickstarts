@@ -70,7 +70,7 @@ parameters:
   required: true
 - description: Git source URI for application
   name: SOURCE_REPOSITORY_URL
-  value: https://github.com/redhat-cop/containers-quickstarts.git
+  value: https://github.com/dimjost/containers-quickstarts.git
   required: true
 - description: Git branch/tag reference
   name: SOURCE_REPOSITORY_REF

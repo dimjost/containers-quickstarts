@@ -5,7 +5,7 @@ Source to Image (S2I) compatible image for running an existing executable artifa
 ## Quickstart
 
 1. Clone this repository:
-   `git clone https://github.com/redhat-cop/containers-quickstarts`
+   `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/build-s2i-executable`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=roles`
 4. Login to Openshift: `oc login -u <username> https://master.example.com:8443`
@@ -24,7 +24,7 @@ The requirements of this image are simple. All you need are:
 
 * An OpenShift or Minishift cluster
 * A git repo with static content in it
-* [OpenShift Applier](https://github.com/redhat-cop/openshift-applier) to build the image. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html).
+* [OpenShift Applier](https://github.com/dimjost/openshift-applier) to build the image. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html).
 
 ## OpenShift objects
 

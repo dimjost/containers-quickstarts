@@ -106,7 +106,7 @@ objects:
     source:
       contextDir: build-s2i-gows
       git:
-        uri: https://github.com/redhat-cop/containers-quickstarts
+        uri: https://github.com/dimjost/containers-quickstarts
       type: Git
     strategy:
       dockerStrategy:
@@ -164,4 +164,4 @@ parameters:
 - description: Git source URL for application
   name: SITE_SOURCE_REPOSITORY_URL
   required: true
-  value: https://github.com/redhat-cop/containers-quickstarts
+  value: https://github.com/dimjost/containers-quickstarts

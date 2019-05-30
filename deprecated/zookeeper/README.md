@@ -20,11 +20,11 @@ The following prerequisites must be met prior to beginning to build and deploy Z
 
 * 3 [Persistent Volumes](https://docs.openshift.com/container-platform/3.3/architecture/additional_concepts/storage.html#architecture-additional-concepts-storage)
 * OpenShift Command Line Tool
-* [Openshift Applier](https://github.com/redhat-cop/openshift-applier) to build and deploy Zookeeper. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html)
+* [Openshift Applier](https://github.com/dimjost/openshift-applier) to build and deploy Zookeeper. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html)
 
 ## Build and Deployment
 
-1. Clone this repository: `git clone https://github.com/redhat-cop/containers-quickstarts`
+1. Clone this repository: `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/zookeeper`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=roles`
 4. Login to OpenShift: `oc login -u <username> https://master.example.com:8443`

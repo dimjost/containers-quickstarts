@@ -5,7 +5,7 @@
 ## Quickstart
 
 1. Clone this repository:
-   `git clone https://github.com/redhat-cop/containers-quickstarts`
+   `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/build-s2i-gows`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=roles`
 4. Login to Openshift: `oc login -u <username> https://master.example.com:8443`
@@ -26,7 +26,7 @@ The requirements of this image are simple. All you need are:
 
 * An OpenShift or Minishift cluster
 * A git repo with static content in it
-* [OpenShift Applier](https://github.com/redhat-cop/openshift-applier) to build and deploy Gows. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html).
+* [OpenShift Applier](https://github.com/dimjost/openshift-applier) to build and deploy Gows. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html).
 
 ## OpenShift objects
 
@@ -46,7 +46,7 @@ The build supports a few environment variables to specify the source of the site
 | ------------- | ------------- | ----------- |
 | `SITE_CONTEXT_DIR` | `build-s2i-gows/demo` | Location of the site files within the git repository |
 | `SITE_SOURCE_REPOSITORY_REF` | `master` | Git branch/tag of the site files |
-| `SITE_SOURCE_REPOSITORY_URL` | `https://github.com/redhat-cop/containers-quickstarts` | Git repository of the site files |
+| `SITE_SOURCE_REPOSITORY_URL` | `https://github.com/dimjost/containers-quickstarts` | Git repository of the site files |
 
 ### Docker Build Vars
 

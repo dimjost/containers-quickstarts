@@ -14,7 +14,7 @@ It makes use of the following technologies:
 
 * [StatefulSets](http://kubernetes.io/docs/concepts/abstractions/controllers/statefulsets/)
 * [Headless Services](http://kubernetes.io/docs/user-guide/services/#headless-services)
-* [Openshift Applier](https://github.com/redhat-cop/openshift-applier)
+* [Openshift Applier](https://github.com/dimjost/openshift-applier)
 
 ### OpenShift objects
 The openshift-applier will create the following OpenShift objects:
@@ -33,7 +33,7 @@ The following prerequisites must be met prior to beginning to build and deploy K
 * 6 [Persistent Volumes](https://docs.openshift.com/container-platform/latest/architecture/additional_concepts/storage.html). 3 for Kafka and 3 for Zookeeper ([see below](#verify-storage)) or a cluster that supports [dynamic provisioning with a default StorageClass](https://docs.openshift.com/container-platform/latest/install_config/storage_examples/storage_classes_dynamic_provisioning.html)
 * OpenShift Command Line Tool
 * Zookeeper ([see below](#zookeeper))
-* [Openshift Applier](https://github.com/redhat-cop/openshift-applier) to build and deploy Kafka. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html)
+* [Openshift Applier](https://github.com/dimjost/openshift-applier) to build and deploy Kafka. As a result you'll need to have [ansible installed](http://docs.ansible.com/ansible/latest/intro_installation.html)
 
 ## Zookeeper
 
@@ -45,7 +45,7 @@ A full example of how to build, deploy and validate a Zookeeper deployment is al
 
 ## Build and Deployment
 
-1. Clone this repository: `git clone https://github.com/redhat-cop/containers-quickstarts`
+1. Clone this repository: `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/kafka`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=roles`
 4. Login to OpenShift: `oc login -u <username> https://master.example.com:8443`

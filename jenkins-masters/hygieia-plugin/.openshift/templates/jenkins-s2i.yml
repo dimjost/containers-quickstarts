@@ -60,6 +60,6 @@ objects:
       type: Source
 parameters:
 - name: SOURCE_CODE_URL
-  value: https://github.com/redhat-cop/containers-quickstarts.git
+  value: https://github.com/dimjost/containers-quickstarts.git
 - name: SOURCE_CODE_REF
   value: master

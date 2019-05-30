@@ -10,7 +10,7 @@ but it has been modified to allow permissions to be run in an OpenShift environm
 
 ## Usage
 
-1. Clone this repository: `git clone https://github.com/redhat-cop/containers-quickstarts`
+1. Clone this repository: `git clone https://github.com/dimjost/containers-quickstarts`
 2. `cd containers-quickstarts/sonarqube`
 3. Run `ansible-galaxy install -r requirements.yml --roles-path=galaxy`
 4. Login to OpenShift: `oc login -u <username> https://master.example.com:8443`

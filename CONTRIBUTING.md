@@ -12,7 +12,7 @@ In general, a good quickstart should:
 - Serve as a standalone example of some sort of deployment to OpenShift
 - Have comprehensive, clear documentation
 - Follow the standard structure documented below
-- Be automated using [OpenShift Applier](https://github.com/redhat-cop/openshift-applier)
+- Be automated using [OpenShift Applier](https://github.com/dimjost/openshift-applier)
 
 ## Structure of a QuickStart
 
