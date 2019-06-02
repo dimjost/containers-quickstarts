@@ -26,7 +26,7 @@ RUN yum -y update
 ###########################
 ### Remove old Java JDK ###
 ###########################
-RUN yum -y remove $(rpm -qa | grep openjdk)
+# RUN yum -y remove $(rpm -qa | grep openjdk)
 
 
 
