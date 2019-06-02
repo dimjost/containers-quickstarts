@@ -33,15 +33,19 @@ RUN yum -y update
 #######################
 ### Install OpenJDK ###
 #######################
-RUN yum install -y java-11-openjdk-devel.x86_64 && \
-    rpm -V  java-11-openjdk-devel && \
-    yum clean all -y && \
-	mkdir -p $HOME/.m2
+ADD yum-install.sh /opt/yum-install.sh
+RUN chmod +x /opt/yum-install.sh
+RUN /opt/yum-install.sh
+
+#RUN yum install -y java-11-openjdk-devel.x86_64 && \
+#    rpm -V  java-11-openjdk-devel && \
+#    yum clean all -y
 	
 	
 #####################
 ### Install Maven ###
 #####################
+RUN mkdir -p $HOME/.m2
 ARG MAVEN_DIR=${USER_HOME_DIR}/apache-maven-${MAVEN_VERSION}
 ARG MAVEN_BASE_URL=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/${MAVEN_VERSION}
 ENV M2_HOME ${MAVEN_DIR}
