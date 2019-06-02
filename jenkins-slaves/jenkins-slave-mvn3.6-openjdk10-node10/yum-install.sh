@@ -6,6 +6,8 @@ rpmVerifyInstalledPackage="java-11-openjdk-devel"
 javaHome="/opt/java/java-11-openjdk"
 
 
+mkdir -p /opt/java
+
 
 yum install -y ${yumInstallPackageName} && \
     rpm -V ${rpmVerifyInstalledPackage}
