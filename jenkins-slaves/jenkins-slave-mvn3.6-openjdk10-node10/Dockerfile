@@ -76,6 +76,9 @@ RUN npm install -g npm-check-updates
 
 RUN chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
+    
+RUN chown -R 1001:0 /opt && \
+    chmod -R g+rw /opt
 
 USER 1001
 
