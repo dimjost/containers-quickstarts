@@ -1,4 +1,4 @@
-FROM centos:7
+FROM openshift/jenkins-slave-base-centos7:v3.11
 
 LABEL com.redhat.component="jenkins-slave-mvn3.6.1-openJDK11-nodeJs10.15.3" \
       name="openshift3/jenkins-slave-mvn3.6-openjdk11-node10" \
