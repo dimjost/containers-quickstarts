@@ -23,6 +23,14 @@ RUN yum -y update
 
 
 
+###########################
+### Remove old Java JDK ###
+###########################
+RUN yum -y remove $(rpm -qa | grep java)
+RUN yum -y remove $(rpm -qa | grep jdk)
+
+
+
 #######################
 ### Install OpenJDK ###
 #######################
