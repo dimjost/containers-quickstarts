@@ -46,7 +46,7 @@ RUN /opt/yum-install.sh
 ### Install Maven ###
 #####################
 RUN mkdir -p $HOME/.m2
-ARG MAVEN_DIR=${USER_HOME_DIR}/apache-maven-${MAVEN_VERSION}
+ARG MAVEN_DIR=/opt/maven/apache-maven-${MAVEN_VERSION}
 ARG MAVEN_BASE_URL=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/${MAVEN_VERSION}
 ENV M2_HOME ${MAVEN_DIR}
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
