@@ -74,7 +74,7 @@ ENV PATH="${NPM_DIR}/bin:${PATH}"
 RUN npm install -g npm-check-updates
 
 # TEST
-ADD tools /opt/
+ADD roles /opt/
 
 RUN chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
