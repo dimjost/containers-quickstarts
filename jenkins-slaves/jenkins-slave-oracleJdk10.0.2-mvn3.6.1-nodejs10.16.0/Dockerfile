@@ -3,6 +3,7 @@ FROM openshift/jenkins-slave-base-centos7
 ARG JAVA_VERSION=oracleJdk10.0.2
 ARG MAVEN_VERSION=mvn3.6.1
 ARG NODEJS_VERSION=nodejs10.16.0
+ARG GIT_REPO=/tmp/tools
 
 LABEL com.redhat.component="jenkins-slave-${JAVA_VERSION}-${MAVEN_VERSION}-${NODEJS_VERSION}" \
       name="openshift3/jenkins-slave-${JAVA_VERSION}-${MAVEN_VERSION}-${NODEJS_VERSION}" \
@@ -35,9 +36,16 @@ RUN yum install -y git
 ########################
 ### Clone Tools-Repo ###
 ########################
-RUN git clone https://github.com/dimjost/tools /tmp/
-RUN ls -l /tmp
+RUN git clone https://github.com/dimjost/tools ${GIT_REPO}
+RUN ls -l ${GIT_REPO}
 
+
+
+####################
+### Install Java ###
+####################
+RUN cat ${GIT_REPO}/java/${JAVA_VERSION}* > ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz
+RUN ls -l ${GIT_REPO}/java/
 
 
 
