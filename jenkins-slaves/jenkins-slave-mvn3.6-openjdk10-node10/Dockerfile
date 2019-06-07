@@ -73,10 +73,6 @@ RUN mkdir -p ${NPM_DIR} \
 ENV PATH="${NPM_DIR}/bin:${PATH}"
 RUN npm install -g npm-check-updates
 
-# TEST
-ADD ./* $HOME/src/
-RUN ls -l $HOME/src/
-ADD roles /opt/
 
 RUN chown -R 1001:0 $HOME && \
     chmod -R g+rw $HOME
