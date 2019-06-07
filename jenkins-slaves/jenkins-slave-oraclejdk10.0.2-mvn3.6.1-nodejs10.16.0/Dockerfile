@@ -55,7 +55,7 @@ RUN mkdir -p ${JAVA_DIR} && \
 	tar -xzf ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz -C ${JAVA_DIR} --strip-components=1 && \
 	rm -f ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz
 ENV PATH="${JAVA_DIR}/bin:${PATH}"
-
+ENV JAVA_HOME ${JAVA_DIR}
 
 
 #####################
