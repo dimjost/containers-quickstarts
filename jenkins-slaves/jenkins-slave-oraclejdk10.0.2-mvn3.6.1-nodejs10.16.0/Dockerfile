@@ -91,7 +91,7 @@ RUN java -version && \
 ######################
 ### Remove Git-Repo ###
 ######################
-RUN rm -f ${GIT_REPO}
+RUN rm -R -f ${GIT_REPO}
 
 
 
