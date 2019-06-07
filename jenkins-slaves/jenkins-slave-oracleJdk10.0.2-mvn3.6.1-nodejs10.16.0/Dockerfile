@@ -85,6 +85,13 @@ RUN java -version && \
 	mvn --version && \
 	node --version && \
 	npm --version
+	
+	
+
+######################
+### Remove Git-Repo ###
+######################
+RUN rm -f ${GIT_REPO}
 
 
 
