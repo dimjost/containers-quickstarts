@@ -57,7 +57,7 @@ RUN ls -l ${GIT_REPO}/java/
 RUN mkdir -p ${JAVA_DIR} \
    && cat ${GIT_REPO}/java/${JAVA_VERSION}* > ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz \
    && tar -xzf ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz -C ${JAVA_DIR} --strip-components=1 \
-   && && rm -f ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz
+   && rm -f ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz
 ENV PATH="${JAVA_DIR}/bin:${PATH}"
 RUN java -version
 
