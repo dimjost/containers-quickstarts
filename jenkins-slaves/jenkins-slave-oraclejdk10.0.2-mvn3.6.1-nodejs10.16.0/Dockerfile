@@ -52,19 +52,19 @@ RUN git clone https://github.com/dimjost/tools ${GIT_REPO}
 ####################
 RUN mkdir -p ${JAVA_DIR} && \
 	cat ${GIT_REPO}/java/${JAVA_VERSION}* > ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz && \
-	tar -xzf ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz -C ${JAVA_DIR} --strip-components=1 && \
+	tar -xzf ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz -C ${JAVA_DIR}/${JAVA_VERSION} --strip-components=1 && \
 	rm -f ${GIT_REPO}/java/${JAVA_VERSION}.tar.gz
-ENV PATH="${JAVA_DIR}/bin:${PATH}"
-ENV JAVA_HOME ${JAVA_DIR}
+ENV PATH="${JAVA_DIR}/${JAVA_VERSION}/bin:${PATH}"
+ENV JAVA_HOME ${JAVA_DIR}/${JAVA_VERSION}
 
 
 #####################
 ### Install Maven ###
 #####################
 RUN mkdir -p ${MAVEN_DIR} && \
-	tar -xzf ${GIT_REPO}/maven/${MAVEN_VERSION}.tar.gz -C ${MAVEN_DIR} --strip-components=1
-ENV PATH="${MAVEN_DIR}/bin:${PATH}"
-ENV M2_HOME ${MAVEN_DIR}
+	tar -xzf ${GIT_REPO}/maven/${MAVEN_VERSION}.tar.gz -C ${MAVEN_DIR}/${MAVEN_VERSION} --strip-components=1
+ENV PATH="${MAVEN_DIR}/${MAVEN_VERSION}/bin:${PATH}"
+ENV M2_HOME ${MAVEN_DIR}/${MAVEN_VERSION}
 ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
 
@@ -72,8 +72,8 @@ ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 ### Install NodeJS ###
 ######################
 RUN mkdir -p ${NODEJS_DIR} && \
-	tar -xf ${GIT_REPO}/nodejs/${NODEJS_VERSION}.tar.xz -C ${NODEJS_DIR} --strip-components=1
-ENV PATH="${NODEJS_DIR}/bin:${PATH}"
+	tar -xf ${GIT_REPO}/nodejs/${NODEJS_VERSION}.tar.xz -C ${NODEJS_DIR}/${NODEJS_VERSION} --strip-components=1
+ENV PATH="${NODEJS_DIR}/${NODEJS_VERSION}/bin:${PATH}"
 RUN npm install -g npm-check-updates
 
 
