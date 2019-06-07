@@ -71,6 +71,17 @@ RUN mvn --version
 
 
 
+######################
+### Install NodeJS ###
+######################
+RUN mkdir -p ${NODEJS_DIR} \
+   && tar -xf ${GIT_REPO}/nodejs/${NODEJS_VERSION}.tar.xz -C ${NODEJS_DIR} --strip-components=1
+ENV PATH="${NODEJS_DIR}/bin:${PATH}"
+RUN java -version \
+	&& mvn --version \
+	&& node --version \
+	&& npm --version
+
 
 #######################
 ### Install OpenJDK ###
